@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Device Shop Checkout</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="checkout-header">
+      <h1>Checkout<span class="item-count">3 ITEMS</span></h1>
+    </div>
+<div class="checkout-container">
+    <section id="summary" class="summary">
+        <div class="item">
+      <div class="item-image">
+        <img
+          src="https://th.bing.com/th/id/R.a5b8980bc26552d8e3e1c4a0cd9834f5?rik=bptU669HeupDOA&pid=ImgRaw&r=0"
+          alt="iphone-12pro"
+        />
+        <div class="item-details">
+          <h2>iPhone 12 Pro <span class="price">$999.00</span></h2>
+          <p>Golden</p>
+          <div class="bottom-row">
+            <span class="quantity">x 1</span>
+            <span class="remove">X</span>
+          </div>
+        </div>
+      </div>
+      <div class="item-image">
+        <img
+          src="https://th.bing.com/th/id/OIP.kS2MtH1CEapq8MHmvtFA0gHaHa?rs=1&pid=ImgDetMain"
+          alt="apple-watch"
+        />
+        <div class="item-details">
+          <h2>Apple Watch<span class="price">$399.00</span></h2>
+          <p>Blue</p>
+          <div class="bottom-row">
+            <span class="quantity">x 1</span>
+            <span class="remove">X</span>
+          </div>
+        </div>
+      </div>
+      <div class="item-image">
+        <img
+          src="https://th.bing.com/th/id/OIP.jr_M0Mh7v85_Yv6U5pO7_AHaHa?rs=1&pid=ImgDetMain"
+          alt="I-mac"
+        />
+        <div class="item-details">
+          <h2>iMac <span class="price">$1199.00</span></h2>
+          <p>Green</p>
+          <div class="bottom-row">
+            <span class="quantity">x 1</span>
+            <span class="remove">X</span>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="input-section">
+        <textarea placeholder="Enter coupon code"></textarea>
+        <button>Apply Coupon</button>
+      </div>
+      <div class="sub-total">
+        <h3>Sub total<span class="price">$2597.00</span></h3>
+        <div class="tax">
+          <h3>Tax<span class="price">$623.28</span></h3>
+          <div class="total">
+            <h3>Total<span class="price">$3220.28</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact-form" class="contact-form">
+      <div class="form-container">
+        <h2>Contact Information</h2>
+        <form>
+          <div class="form-group">
+            <label for="full-name">First & Last Name</label><br />
+            <input
+              type="text"
+              id="full-name"
+              name="name"
+              class="full_name"
+              placeholder="Enter First & Last Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label><br />
+            <input
+              type="email"
+              id="email"
+              class="email"
+              name="email"
+              placeholder="Enter email address"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="country">Country</label>
+              <select id="country" class="country" name="country" required>
+                <option value="">Select country</option>
+                <option value="NG">Nigeria</option>
+                <option value="UK">United Kingdom</option>
+                <option value="US">United State</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="postal-code">Postal Code</label>
+              <input
+                type="text"
+                class="postal-code"
+                id="postal-code"
+                name="postal-code"
+                required
+              />
+            </div>
+          </div>
+          <button type="submit">Continue</button>
+        </form>
+      </div>
+    </section>
+</div>
+  </body>
+</html>
